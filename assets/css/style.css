@@ -1,0 +1,15 @@
+.box {
+    border: 1px solid black;
+    height: 250px;
+    width: 67%;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.box2 {
+    border: 1px solid black;
+    height: 250px;
+    width: 27%;
+    display: inline-block;
+}
