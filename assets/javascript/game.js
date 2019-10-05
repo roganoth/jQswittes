@@ -1,7 +1,7 @@
-var wrongGuessText = document.getElementById("#guessbox");
+var wrongGuessText = document.getElementById("#wrong");
 var blankLetters = document.getElementById("#guessbox");
 
-wordBank = ["PARADIGM","ALLOY","MINE","CRAFT","EVOLUTION","CLEAVER"]
+var wordBank = ["PARADIGM","ALLOY","MINE","CRAFT","EVOLUTION","CLEAVER"]
 var tryAgain = Math.floor(Math.random()*wordBank.length);
 console.log(wordBank[tryAgain]);
 var wrongGuess = [];
@@ -20,10 +20,15 @@ document.onkeyup = function(event){
 
     if(wordBank[tryAgain].includes(upperUserGuess)) {
         console.log(upperUserGuess);
+        for(i = 0; i < wordBank.length; i ++);
+        if (upperUserGuess === wordBank[i]) {
+            blankLetters.textContent(upperUserGuess);
+        }
     }
 
     else {
         wrongGuess.push(upperUserGuess);
+        console.log(wrongGuess);
         wrongGuessText.textContent = "You've tried these letter: " + wrongGuess;
 
     }
