@@ -20,9 +20,9 @@ document.onkeyup = function(event){
 
     if(wordBank[tryAgain].includes(upperUserGuess)) {
         console.log(upperUserGuess);
-        for(i = 0; i < wordBank.length; i ++);
+        for(i = 0; i < wordBank[tryAgain].length; i ++);
         if (upperUserGuess === wordBank[i]) {
-            blankLetters.textContent(upperUserGuess);
+            blankLetters.textContent = upperUserGuess;
         }
     }
 
