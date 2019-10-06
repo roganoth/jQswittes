@@ -29,7 +29,8 @@ document.onkeyup = function(event){
     else {
         wrongGuess.push(upperUserGuess);
         console.log(wrongGuess);
-        wrongGuessText.textContent = "You've tried these letter: " + wrongGuess;
+        // create a for loop and include and index for finding wrongGuess
+        wrongGuessText.textContent = "You've tried these letter: " + wrongGuess[];
 
     }
 }
