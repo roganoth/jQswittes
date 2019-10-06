@@ -9,7 +9,7 @@ var wrongGuess = [];
 function newWord() {
     var tryAgain = Math.floor(Math.random()*wordBank.length);
     console.log(wordBank[tryAgain]);
-    blankLetters.textContent = "_ " * tryAgain.length;
+    blankLetters.textContent = "_ " * wordBank[tryAgain].length;
      
 }
 
@@ -30,7 +30,8 @@ document.onkeyup = function(event){
         wrongGuess.push(upperUserGuess);
         console.log(wrongGuess);
         // create a for loop and include and index for finding wrongGuess
-        wrongGuessText.textContent = "You've tried these letter: " + wrongGuess[];
+        for(j = 0; j < wrongGuess.length; j++);
+        wrongGuessText.textContent = "You've tried these letter: " + wrongGuess[j];
 
     }
 }
